@@ -15,6 +15,7 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.UIManager;
 import java.awt.SystemColor;
+import java.awt.Window.Type;
 
 public class GiaoDien extends JFrame {
 
@@ -60,7 +61,7 @@ public class GiaoDien extends JFrame {
 		
 		JButton btnChon = new JButton("Chọn");
 		btnChon.setFont(new Font("Arial", Font.PLAIN, 14));
-		btnChon.setBounds(77, 110, 89, 23);
+		btnChon.setBounds(68, 109, 89, 23);
 		panel.add(btnChon);
 		
 		JLabel lblNewLabel = new JLabel("Nguồn");
@@ -72,7 +73,7 @@ public class GiaoDien extends JFrame {
 		JLabel lblNewLabel_1 = new JLabel("Đích");
 		lblNewLabel_1.setFont(new Font("Arial", Font.PLAIN, 14));
 		lblNewLabel_1.setForeground(Color.BLUE);
-		lblNewLabel_1.setBounds(145, 33, 49, 23);
+		lblNewLabel_1.setBounds(155, 33, 49, 23);
 		panel.add(lblNewLabel_1);
 		
 		tf1 = new JTextField();
@@ -82,7 +83,7 @@ public class GiaoDien extends JFrame {
 		
 		ft2 = new JTextField();
 		ft2.setColumns(10);
-		ft2.setBounds(144, 67, 36, 20);
+		ft2.setBounds(155, 67, 36, 20);
 		panel.add(ft2);
 		
 		JLabel lblNewLabel_2 = new JLabel("Bảng chỉ đường");
@@ -94,7 +95,7 @@ public class GiaoDien extends JFrame {
 		txtngi = new JTextField();
 		txtngi.setBackground(new Color(224, 255, 255));
 		txtngi.setFont(new Font("Arial", Font.PLAIN, 14));
-		txtngi.setText("Đường đi");
+		txtngi.setText("Đường đi:");
 		txtngi.setForeground(new Color(255, 0, 0));
 		txtngi.setBounds(310, 178, 224, 30);
 		contentPane.add(txtngi);
@@ -103,7 +104,7 @@ public class GiaoDien extends JFrame {
 		txtKhongCch = new JTextField();
 		txtKhongCch.setForeground(new Color(255, 0, 0));
 		txtKhongCch.setBackground(new Color(224, 255, 255));
-		txtKhongCch.setText("Khoảng cách");
+		txtKhongCch.setText("Khoảng cách:");
 		txtKhongCch.setFont(new Font("Arial", Font.PLAIN, 14));
 		txtKhongCch.setColumns(10);
 		txtKhongCch.setBounds(310, 223, 224, 30);
@@ -112,12 +113,12 @@ public class GiaoDien extends JFrame {
 		JPanel panel_1 = new JPanel();
 		panel_1.setLayout(null);
 		panel_1.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "\u0110i\u1EC1u khi\u1EC3n", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-		panel_1.setBounds(361, 277, 123, 74);
+		panel_1.setBounds(361, 277, 116, 74);
 		contentPane.add(panel_1);
 		
 		JButton btnNewButton = new JButton("Kết thúc");
 		btnNewButton.setFont(new Font("Arial", Font.PLAIN, 14));
-		btnNewButton.setBounds(10, 27, 89, 23);
+		btnNewButton.setBounds(10, 40, 93, 23);
 		panel_1.add(btnNewButton);
 	}
 }
